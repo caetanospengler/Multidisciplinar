@@ -1,0 +1,75 @@
+html,body{
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: grid;
+    place-items: center;
+}
+
+.corpo{
+    background-color:rgb(192, 140, 140);
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 5fr 0.5fr 4fr 0.5fr 4fr 1fr;
+    grid-template-rows: 1fr 5fr 1fr;
+    grid-template-areas: 
+    "titulo titulo titulo titulo titulo titulo titulo"
+    ". primeiro . segundo . terceiro ."
+    ". . . . . . .";
+}
+
+.titulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 4px;
+    color: black;
+    grid-area: titulo;
+    font-family: 'Kanit', sans-serif;
+    font-size: 50px;
+    font-weight: 200;
+}
+
+.primeiro{
+    background-color: rgba(44, 44, 44, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4px;
+    border-radius: 10%;
+    grid-area: primeiro;
+    border: 10px;
+    border-style: solid;
+    border-color: black;
+}
+
+.segundo{
+    background-color: rgba(44, 44, 44, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4px;
+    border-radius: 10%;
+    grid-area: segundo;
+    border: 10px;
+    border-style: solid;
+    border-color: black;
+}
+
+.terceiro{
+    background-color: rgba(44, 44, 44, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4px;
+    border-radius: 10%;
+    grid-area: terceiro;
+    border: 10px;
+    border-style: solid;
+    border-color: black;
+}
