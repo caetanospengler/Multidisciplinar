@@ -1,13 +1,15 @@
 document.addEventListener("DOMContentLoaded", function(event) {
-const url = 'https://www.portaltransparencia.gov.br/api-de-dados/cartoes?mesExtratoInicio=11%2F2019&mesExtratoFim=10%2F2020&pagina=1'
+const url = 'http://www.portaltransparencia.gov.br/api-de-dados/cartoes?mesExtratoInicio=11%2F2019&mesExtratoFim=10%2F2020&pagina=1'
+
 
 
 
 var  header = new Headers({
     'chave-api-dados': '841ae6c076331d1535becdcce757fd2c', 
-    'Accept': '*/*'
+    'Accept': '*/*',
+    'Access-Control-Allow-Origin': '*'
 });
-var config = {method: 'GET', headers: header };
+var config = {method: 'GET', headers: header, mode: "no-cors" };
 
     fetch(url, config)
 
