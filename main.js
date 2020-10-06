@@ -9,7 +9,7 @@ var  header = new Headers({
     'Accept': '*/*',
     'Access-Control-Allow-Origin': '*'
 });
-var config = {method: 'GET', headers: header, mode: "no-cors" };
+var config = {method: 'GET', headers: header};
 
     fetch(url, config)
 
