@@ -10,8 +10,8 @@ xhr.send(null);
 
 xhr.onreadystatechange = function() {
     if(xhr.readyState === 4){
-       var json = JSON(xhr.responseText);
-        console.log(json);
+       console.log(JSON(xhr.responseText));
+       
         }
     }
 
