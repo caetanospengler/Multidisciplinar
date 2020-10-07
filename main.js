@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         
         
         var xhr = new XMLHttpRequest();
-        xhr.open("GET","https://cors-anywhere.herokuapp.com/%22"+url)
+        xhr.open("GET","https://cors-anywhere.herokuapp.com/"+url)
         xhr.setRequestHeader("chave-api-dados", "841ae6c076331d1535becdcce757fd2c");
         xhr.setRequestHeader("Accept", "/");
         xhr.send(null);
