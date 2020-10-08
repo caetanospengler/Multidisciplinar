@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
+
 html,body{
     min-height: 100vh;
     padding: 0;
@@ -10,42 +12,43 @@ body{
 }
 
 .corpo{
-    background-color:rgb(192, 140, 140);
+    background-color:rgb(241, 241, 241);
     height: 100%;
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 5fr 0.5fr 4fr 0.5fr 4fr 1fr;
-    grid-template-rows: 1fr 5fr 1fr;
+    grid-template-columns: 3fr 0.5fr 5fr 0.5fr 4fr 0.5fr 4fr 1fr;
+    grid-template-rows: 1fr 0.5fr 5fr 1fr;
     grid-template-areas: 
-    "titulo titulo titulo titulo titulo titulo titulo"
-    ". primeiro . segundo . terceiro ."
-    ". . . . . . .";
+    "titulo titulo titulo titulo titulo titulo titulo titulo"
+    "menu . . . . . . ."
+    "menu . geral geral geral segundo segundo ."
+    "menu . . . . . . .";
 }
 
 .titulo{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    background-color: #103d74;
     align-items: center;
     padding: 4px;
-    color: black;
+    color: rgb(255, 255, 255);
     grid-area: titulo;
     font-family: 'Kanit', sans-serif;
     font-size: 50px;
+    font-family: 'Ubuntu', sans-serif;
+
     font-weight: 200;
 }
 
-.primeiro{
-    background-color: rgba(44, 44, 44, 0);
+.geral{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 4px;
-    border-radius: 10%;
-    grid-area: primeiro;
-    border: 10px;
-    border-style: solid;
-    border-color: black;
+    border-radius: 20px;
+    grid-area: geral;
+    background-color: rgb(181, 224, 241);
 }
 
 .segundo{
@@ -54,13 +57,15 @@ body{
     flex-direction: column;
     align-items: center;
     padding: 4px;
-    border-radius: 10%;
     grid-area: segundo;
-    border: 10px;
-    border-style: solid;
-    border-color: black;
+    overflow: hidden;
 }
 
+img{
+    height: 100%;
+    width: 100%;
+}
+/*
 .terceiro{
     background-color: rgba(44, 44, 44, 0);
     display: flex;
@@ -72,4 +77,31 @@ body{
     border: 10px;
     border-style: solid;
     border-color: black;
+}*/
+
+.menu{
+    background-color: rgb(144, 190, 243);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: menu;
+}
+
+.cidades{
+    background-color: rgb(125, 186, 255);
+    height:100%;
+    width: 100%;
+    border-style: none;
+    /*border-top: solid;
+    border-right: solid;
+    border-color: rgba(0, 0, 0, 0.3);*/
+    font-family: 'Ubuntu', sans-serif;
+    color:  rgba(0, 0, 0, 0.9);
+    font-size: 16px;
+    outline: none;  
+    font-weight: 500;
+}
+
+.cidades:hover{
+    background-color:   #ffffff5b;
 }
