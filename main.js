@@ -1,5 +1,8 @@
+var botao = document.getElementById(".4308102");
+
+
 document.addEventListener("DOMContentLoaded", function(event) {
-const url = 'http://www.portaltransparencia.gov.br/api-de-dados/cartoes?mesExtratoInicio=11%2F2019&mesExtratoFim=10%2F2020&tipoCartao=1&pagina=1';
+const url = 'http://www.transparencia.gov.br/api-de-dados/auxilio-emergencial-por-municipio?mesAno=202004&codigoIbge=4308102&pagina=1';
 
 var xhr = new XMLHttpRequest();
 
@@ -11,7 +14,6 @@ xhr.send(null);
 xhr.onreadystatechange = function() {
     if(xhr.readyState === 4){
        console.log(JSON.parse(xhr.responseText));
-
         }
     }
 
