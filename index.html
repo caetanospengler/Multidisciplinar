@@ -1,42 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Auxílio Emergencial</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="estilo.css" rel="stylesheet">
-        <script src="main.js"></script>
-    </head>
-    <body>
-        <div class="corpo">
-            <div class="titulo">💵 Auxílio Emergencial 💵</div>
-            <div class="geral">
-                <p style="font-size:50px">Feliz</p>
-                <p>Gasto Total: R$30000</p>
-            </div>
-            <div class="segundo"></div>
-            <div class="terceiro"></div>
-            <div id = "menu" class="menu">
-                <button id="4300570" class="cidades">Alto Feliz</button>
-                <button id="4301651" class="cidades">Barão</button>
-                <button id="4302352" class="cidades">Bom Princípio</button>
-                <button id="4302659" class="cidades">Brochier</button>
-                <button id="4304689" class="cidades">Capela de Santana</button>
-                <button onclick= "feliz()" id="4308102" class="cidades">Feliz</button>
-                <button onclick= "harmonia()" id="4309555" class="cidades">Harmonia</button>
-                <button id="4311643" class="cidades">Linha Nova</button>
-                <button id="4312401" class="cidades">Maratá</button>
-                <button id="4314035" class="cidades">Montenegro</button>
-                <button id="4316501" class="cidades">Pareci Novo</button>
-                <button id="4318481" class="cidades">Salvador do Sul</button>
-                <button id="4318614" class="cidades">São José do Hortêncio</button>
-                <button id="4319356" class="cidades">São Pedro da Serra</button>
-                <button id="4319505" class="cidades">São Sebastião do Caí</button>
-                <button id="4319752" class="cidades">São Vendelino</button>
-                <button id="4322251" class="cidades">Tupandi</button>
-                <button id="4322541" class="cidades">Vale Real</button>
-            </div>
-            
+
+<head>
+    <title>Auxílio Emergencial</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="estilo.css" rel="stylesheet">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div class="corpo">
+        <div class="titulo">💵 Auxílio Emergencial 💵</div>
+        <div class="geral">
+            <p id="nome" style="font-size:50px">Feliz</p>
+            <p id="valor">Gasto Total: R$30000</p>
         </div>
-    </body>
+        <div class="segundo"></div>
+        <div class="terceiro"></div>
+        <div id="menu" class="menu">
+            <button onclick="pesquisar(this)" id="bt" value="4300570" class="cidades">Alto Feliz</button>
+            <button onclick="pesquisar(this)" id="bt" value="4301651" class="cidades">Barão</button>
+            <button onclick="pesquisar(this)" id="bt" value="4302352" class="cidades">Bom Princípio</button>
+            <button onclick="pesquisar(this)" id="bt" value="4302659" class="cidades">Brochier</button>
+            <button onclick="pesquisar(this)" id="bt" value="4304689" class="cidades">Capela de Santana</button>
+            <button onclick="pesquisar(this)" id="bt" value="4308102" class="cidades">Feliz</button>
+            <button onclick="pesquisar(this)" id="bt" value="4309555" class="cidades">Harmonia</button>
+            <button onclick="pesquisar(this)" id="bt" value="4311643" class="cidades">Linha Nova</button>
+            <button onclick="pesquisar(this)" id="bt" value="4311791" class="cidades">Maratá</button>
+            <button onclick="pesquisar(this)" id="bt" value="4312401" class="cidades">Montenegro</button>
+            <button onclick="pesquisar(this)" id="bt" value="4314035" class="cidades">Pareci Novo</button>
+            <button onclick="pesquisar(this)" id="bt" value="4316501" class="cidades">Salvador do Sul</button>
+            <button onclick="pesquisar(this)" id="bt" value="4318481" class="cidades">São José do Hortêncio</button>
+            <button onclick="pesquisar(this)" id="bt" value="4319356" class="cidades">São Pedro da Serra</button>
+            <button onclick="pesquisar(this)" id="bt" value="4319505" class="cidades">São Sebastião do Caí</button>
+            <button onclick="pesquisar(this)" id="bt" value="4319752" class="cidades">São Vendelino</button>
+            <button onclick="pesquisar(this)" id="bt" value="4322251" class="cidades">Tupandi</button>
+            <button onclick="pesquisar(this)" id="bt" value="4322541" class="cidades">Vale Real</button>
+        </div>
+
+    </div>
+</body>
+
 </html>
