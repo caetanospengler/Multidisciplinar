@@ -1,7 +1,7 @@
-function feliz() {
-    var X = (document.getElementById("4308102").value = "4308102");
-    const url = 'http://www.transparencia.gov.br/api-de-dados/auxilio-emergencial-por-municipio?mesAno=202004&codigoIbge='+X+'&pagina=1';
-        
+function pesquisar(string) {
+    var x = string.value;
+    const url = 'http://www.transparencia.gov.br/api-de-dados/auxilio-emergencial-por-municipio?mesAno=202004&codigoIbge='+x+'&pagina=1';
+
     var xhr = new XMLHttpRequest();
     
     xhr.open("GET","https://cors-anywhere.herokuapp.com/"+url);
@@ -12,6 +12,8 @@ function feliz() {
     xhr.onreadystatechange = function() {
         if(xhr.readyState === 4){
            console.log(JSON.parse(xhr.responseText));
+           document.getElementById('nome').innerHTML = JSON.parse(xhr.responseText)['0']['municipio'].nomeIBGE;
+           document.getElementById('valor').innerHTML = JSON.parse(xhr.responseText)['0'].valor;
             }
         }
 }
