@@ -90,13 +90,3 @@ function pesquisar(string) {
 
     }
 }
-
-
-    
-
-
-
-
-
-
-
