@@ -15,6 +15,7 @@ body{
     background-color:rgb(241, 241, 241);
     height: 100%;
     width: 100%;
+    max-height: 100vh;
     display: grid;
     grid-template-columns: 3fr 0.5fr 5fr 0.5fr 4fr 0.5fr 4fr 1fr;
     grid-template-rows: 1fr 0.5fr 5fr 1fr;
@@ -31,24 +32,28 @@ body{
     justify-content: space-around;
     background-color: #103d74;
     align-items: center;
-    padding: 4px;
-    color: rgb(255, 255, 255);
+    margin-top: -25px;
     grid-area: titulo;
-    font-family: 'Kanit', sans-serif;
-    font-size: 50px;
-    font-family: 'Ubuntu', sans-serif;
-
-    font-weight: 200;
 }
 
 .geral{
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100%;
+    width: 100%;
     padding: 4px;
     border-radius: 20px;
     grid-area: geral;
     background-color: rgb(181, 224, 241);
+    /*display: grid;
+    grid-template-columns: 0.6fr 1fr 1fr 1fr 0.6fr;
+    grid-template-rows: 0.8fr 0.6fr 0.6fr 0.6fr;
+    grid-template-areas: 
+    ". . . . ."
+    ". . . . ."
+    ". . . . ."
+    ". . . . .";*/
 }
 
 .segundo{
@@ -61,10 +66,6 @@ body{
     overflow: hidden;
 }
 
-img{
-    height: 100%;
-    width: 100%;
-}
 /*
 .terceiro{
     background-color: rgba(44, 44, 44, 0);
@@ -105,3 +106,69 @@ img{
 .cidades:hover{
     background-color:   #ffffff5b;
 }
+
+.valores{
+    font-size: 15px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 200;
+}
+
+
+.tituloEscrito{
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+}
+
+.tituloDescricao{
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    margin-top: -18px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 200;
+}
+
+.cidadeTitulo{
+    font-family: 'Ubuntu', sans-serif;
+    font-size:46px;
+    font-weight: 500;
+}
+
+table{ 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td{
+height: 30px;
+width: 200px;
+font-size: 18px;
+font-weight: 400;
+}
+
+th{
+    font-family: 'Ubuntu', sans-serif;
+    font-size:30px;
+    font-weight: 500;
+}
+
+td, th {
+    border: 1px solid #000000;
+    text-align: center;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #99c26a;
+}
+
+/*tr:nth-child(odd) {
+    background-color: #e6e6e6;
+}*/
