@@ -14,6 +14,7 @@ function pesquisar(string) {
             document.getElementById('nome').innerHTML = JSON.parse(xhr.responseText)['0']['municipio'].nomeIBGE;
             document.getElementById('valor').innerHTML = "R$" + JSON.parse(xhr.responseText)['0'].valor;
             document.getElementById('beneficiado1').innerHTML = JSON.parse(xhr.responseText)['0'].quantidadeBeneficiados;
+            document.getElementById('toggle').src='img/'+x+'.png';
         }
 
     }
